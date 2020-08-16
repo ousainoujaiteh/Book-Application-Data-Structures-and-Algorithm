@@ -33,7 +33,7 @@ public class BookList {
 
     public BookNode searchByAuthor(String author) {
         BookNode current = first;
-        while (current.book.getGenre().equalsIgnoreCase(author)) {
+        while (current.book.getAuthor() != author) {
             if (current.next == null) {
                 return null;
             } else {

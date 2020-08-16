@@ -8,7 +8,7 @@ public class BookListTester {
 
         Book book = new Book();
         book.setTitle("Programming");
-        book.setAuthor("Ousainou Jaiteh");
+        book.setAuthor("Ousainou");
         book.setFormat("PDF");
         book.setGenre("GENRE");
         book.setIsbn("4309443");
@@ -42,15 +42,12 @@ public class BookListTester {
         list.addBook(book1);
         list.addBook(book2);
 
-        BookNode bookNode = list.searchByAuthor("Ousainou Jaiteh");
+        BookNode bookNode = list.searchByAuthor("Ousainou");
         if (bookNode != null){
             System.out.println("Displaying Book(s) by Author...");
             bookNode.displayBook();
         }else {
             System.out.println("No Book Found !!!");
         }
-
-        //list.displayBooksByGenre("GENRE1");
-
     }
 }

@@ -1,4 +1,4 @@
 123456 ; Programming ; Ousain ; Test Publisher ; 3 ;  12-8-2019 ;  PDF ; GENRE ;  100 ;
 123456002 ; Networking ; Blala ;Test Publisher ; 2 ;  12-8-2018 ;  PDF ; GENRE ;  105 ;
-12345601 ;  Security ; Fred; Test Publisher ;  3  ; 12-8-2017 ;  PDF ; GENRE ;  104 ;
-12345600 ; Maths ; Musa ; Test Publisher ; 4 ;  12-8-2020 ;  JPG ; GENRE ;  101 ;
+12345601 ;  Security ; Ared; Test Publisher ;  3  ; 12-8-2017 ;  PDF ; GENRE ;  104 ;
+12345600 ; Maths ; Cusa ; Test Publisher ; 4 ;  12-8-2020 ;  JPG ; GENRE ;  101 ;

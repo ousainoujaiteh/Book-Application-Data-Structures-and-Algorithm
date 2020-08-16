@@ -1,6 +1,6 @@
 package book;
 
-public class Book {
+public class Book implements Comparable<Book> {
 
     private String isbn;
     private String title;
@@ -85,6 +85,17 @@ public class Book {
 
     public void setNumberOfBorrows(int numberOfBorrows) {
         this.numberOfBorrows = numberOfBorrows;
+    }
+
+    @Override
+    public int compareTo(Book book) {
+        if (this.getAuthor().compareTo(book.getAuthor()) < 0){
+            return -1;
+        }else if (this.getAuthor().compareTo(this.getAuthor()) > 0){
+            return 1;
+        }else{
+            return 0;
+        }
     }
 
     public String toString(){

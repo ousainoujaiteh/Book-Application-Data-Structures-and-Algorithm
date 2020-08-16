@@ -1,4 +1,4 @@
-package bookBST;
+package bst;
 
 import book.Book;
 
@@ -8,21 +8,30 @@ import java.util.Scanner;
 
 public class BinarySearchTreeTester {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        BookBST b = loadData();
-        b.traverse();
+        BinarySearchTree tree = loadData();
 
+        System.out.println("Ascending Order.......");
+        for (Object list : tree.toList()) {
+            System.out.println(list);
+        }
+
+        System.out.println();
+
+        System.out.println("Descending Order.......");
+        for (Object list : tree.toDesc(tree.toList())) {
+            System.out.println(list);
+        }
     }
 
-    public static BookBST loadData(){
-        BookBST bst = new BookBST();
+    public static BinarySearchTree loadData() {
+        BinarySearchTree bst = new BinarySearchTree();
         try {
-            String path = "/home/ousainou/Documents/academics/UTG-TA/2019-2020 " +
-                    "SEMESTER 2/OPERATING SYSTEMS/BookApplication/src/bookBST/BooksData.txt";
+            String path = "BooksData.txt";
             File file = new File(path);
             Scanner reader = new Scanner(file);
-            while (reader.hasNextLine()){
+            while (reader.hasNextLine()) {
                 String data = reader.nextLine();
                 String[] book = data.trim().split(";");
                 Book bk = new Book();
