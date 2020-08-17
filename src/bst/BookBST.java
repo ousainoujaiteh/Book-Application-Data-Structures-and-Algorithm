@@ -5,7 +5,7 @@ package bst;
  * @author Koffman and Wolfgang
  * @param <E>
  **/
-public interface SearchTree<E extends Comparable<E>>  {
+public interface BookBST<E extends Comparable<E>>  {
 
     /**
      * Inserts item where it belongs in the tree.
